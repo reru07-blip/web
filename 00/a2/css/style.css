@@ -44,4 +44,18 @@ header {
 footer {
   height: 100px;
   background: skyblue;
+  display: flex;
+}
+footer .logo{
+  background: red;
+  display: flex;
+  align-items: center;
+}
+footer .copy{
+  background: green;
+  flex: 1;
+}
+footer .fam{
+  width: 200px;
+  background: blue;
 }
