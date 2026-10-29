@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scale</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    ul{
+      list-style: none;
+      width: 640px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    ul li{
+      width: 200px;
+      height: 150px;
+      overflow: hidden;
+    }
+    ul li a{
+      display: block;
+      width: 100%; height: 100%;
+    }
+    ul li a img{
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: .6s;
+    }
+    ul li:hover a img{
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTIiCIYlc1H-uj1pT91WEzyDyiLIXVFG2lNYR_l6qpUQ&s=10" alt="아이유"></a></li>
+    <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAA9J1Pc3Xu9s5glCr7KI95ZHdylMU6ABhnewUWNNYew&s=10" alt="아이유"></a></li>
+    <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbY-K1v2S9MV013PWFxU6unwRwxBi80M5a9ynPh-Q3g&s=10" alt="아이유"></a></li>
+  </ul>
+</body>
+</html>
