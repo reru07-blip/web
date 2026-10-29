@@ -16,6 +16,7 @@ a {
 }
 
 /* layout */
+/* #32B52C */
 body {
   color: #333;
 }
@@ -27,12 +28,12 @@ body {
 
 header {
   height: 100px;
-  background: #ddd;
+  background: #595959;
 }
 
 .img_slide {
   height: 300px;
-  background: red;
+  background: rgb(65, 48, 48);
 }
 
 .content {
@@ -42,5 +43,5 @@ header {
 
 footer {
   height: 100px;
-  background: blue;
+  background: skyblue;
 }
