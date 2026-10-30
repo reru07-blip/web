@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.con {
+  width: 500px;
+  height: 300px;
+  background: #ddd;
+  position: relative;
+  margin: 100px auto;
+}
+
+.con .card {
+  width: 100%; height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: .5s;
+  transform-origin: bottom center;
+  transform-style: preserve-3d;
+}
+
+.con:hover .card {
+  transform: rotateX(180deg);
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+}
+
+.face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back {
+  transform: rotateX(180deg);
+}

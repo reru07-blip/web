@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사진 뒤집기</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 400px;
+      height: 1000px;
+      background: #5fff87;
+      position: relative;
+      margin: 200px auto;
+    }
+
+    .container .card {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: .6s;
+      transform-origin: right center;
+      transform-style: preserve-3d;
+    }
+
+    .container:hover .card {
+      transform: rotateY(-180deg);
+    }
+
+    .face {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      backface-visibility: hidden;
+    }
+
+    .face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back {
+      transform: rotateY(-180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="face front"><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyDrD4Qg9uyui95rFKHSdfaoBJAiqE5DM2pjOnuG1ooA&s=10"
+          alt="아이유앞면"></div>
+      <div class="face back"><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcL8oOCirxPp5BCvwvIh-HUPrQVR--Y5kpVD_D0H2dQ&s=10"
+          alt="아이유뒷면"></div>
+    </div>
+  </div>
+</body>
+
+</html>
