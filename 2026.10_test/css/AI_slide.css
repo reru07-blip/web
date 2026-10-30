@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+div{
+  width: 1200px;
+  height: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+.wrap{
+  position: absolute;
+}
