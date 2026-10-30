@@ -74,7 +74,7 @@ img {
   background: url(../../images/train.png);
   position: absolute;
   right: 425px;
-  bottom: 100px;
+  bottom: 50px;
   animation: trainAni 9s infinite linear;
 }
 
