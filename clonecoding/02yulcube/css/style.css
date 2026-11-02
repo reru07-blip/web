@@ -49,8 +49,7 @@ body {
   position: fixed;
   inset: 0;
   overflow: hidden;
-  perspective: 1300px;
-  /* 처음 값 1300px */
+  perspective: 900px;
   background: conic-gradient(from 166deg at 34.82% 31.94%, hsl(167deg 83.0128% 11.3782%) 0deg, hsl(210deg 91.3462% 20.9936%) 180deg, hsl(255deg 93.5898% 19.391%) 360deg);
 }
 
