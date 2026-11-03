@@ -1,0 +1,1 @@
+document.querySelector('#out_side').onclick = () => 
