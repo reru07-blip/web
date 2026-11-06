@@ -8,20 +8,12 @@
 </head>
 
 <body>
-  <button type="button" onclick="alert('이거 눌림')">이거 눌러</button>
-  <button type="button" class="change_btn">글씨가 바뀐다</button>
-  <button type="button" class="reset_btn">이번엔 다 바뀐다</button>
-  <button type="button" id="out_side">나 눌러봐</button>
-  <p class="change">뭐가 바뀔까?</p>
   <script>
-    document.querySelector('.change_btn').onclick = () => {
-      document.querySelector('.change').innerHTML = '<em>이거로 바꼈지</em>'
-    }
-    document.querySelector('.reset_btn').onclick = function(){
-      document.write('<h1>나만 있지!</h1>')
-    }
+    let box;
+    document.write(box + '<br>');
+    box = '누구';
+    document
   </script>
-  <script src="js/js.js"></script>
 </body>
 
 </html>
