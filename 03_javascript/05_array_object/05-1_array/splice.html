@@ -37,9 +37,9 @@
 
     //4)인수 3개 이상 -> 1번 인덱스 한 개 삭제 후 새 요소 추가
     let replaceDegign = addskills.splice(1,1,'swiper','GSAP','Three.js');
-    document.write(`<h3>[인수 3개] addskills.splice(1,1,'swiper','GSAP','Three.js')`);
+    document.write(`<h3>[인수 3개] addskills.splice(1,1,'swiper','GSAP','Three.js')</h3>`);
     document.write(`(삭제된 요소) : ${replaceDegign.join(', ')}<br>`);
-    document.write(`(업데이트된 addskills) : ${addskills.join(', ')}<br>`);
+    document.write(`(업데이트된 addskills) : ${addskills.join(', ')}<hr>`);
 
     //최종 합치기
     const final = skills.concat(addskills,replaceDegign);
