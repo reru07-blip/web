@@ -15,11 +15,15 @@
     //배열데이터[0] : 1
     let sum = 0;
     function printArr(item,index){
-      document.write(`배열데이터[${index}]`)
+      document.write(`배열데이터[${index}] : ${item}<br>`);
+      sum += index;
     }
+    data.forEach(printArr);
 
-
-
+    for(let i in data){
+      sum += data[i];
+    }
+    document.write(sum);
   </script>
 </body>
 
