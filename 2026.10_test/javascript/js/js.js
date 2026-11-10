@@ -1,1 +1,2 @@
-document.querySelector('#out_side').onclick = () => 
+document.getElementById('example_id').style.color = 'red';
+document.

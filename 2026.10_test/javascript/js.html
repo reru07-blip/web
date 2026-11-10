@@ -5,17 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../../03_javascript/css/reset.css">
+  <link rel="stylesheet" href="../../03_javascript/css/common.css">
+  <link rel="stylesheet" href="../../03_javascript/06_DOM/css/dom.css">
+  <script src="js/js.js" defer></script>
 </head>
 
 <body>
-  <script>
-    let star = ['물병자리','물고기자리','사자자리','황소자리'];
-    let birth = ['may','jun','junly','march'];
-    let set1 = star.push('염소자리');
-    document.write(`length : ${set1} | 배열 : ${star}`);
-    let set2 = birth.unshift(0);
-    document.write(`length : `)
-  </script>
+  <h1 class="heading_1">DOM API</h1>
+  <section>
+    <h2>getElement</h2>
+    <!-- id 스타일링 -->
+    <button type="button" id="example_id">document.getElementById</button>
+    <!-- class 스타일링 + 속성 값 설정 -->
+    <div class="example_class">document.getElementsByClassName</div>
+    <span class="example_class">document.getElementsByClassName</span>
+    <!-- tagName - 스타일링 하고 새로운 속성 값을 설정하고 클래스를 추가 합니다 -->
+    <p>document.getElementsByTagName</p>
+    <p>document.getElementsByTagName</p>
+  </section>
 </body>
 
 </html>
