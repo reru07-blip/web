@@ -4,71 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GSAP통합 예제</title>
-  <link rel="stylesheet" href="../../04_GSAP/css/style01.css">
-  <!-- GSAP 본체 -->
+  <title>GSAP 제어 심화 + scrollTrigger</title>
+  <link rel="stylesheet" href="../../04_GSAP/css/style03.css">
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-  <!-- ScrollTrigger 플러그인 -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
   <script src="js/js.js"></script>
 </head>
 
 <body>
-  <h1>GSAP 주요 기능 맛보기</h1>
-  <!-- 1. 기본 to / from / fromTo -->
-  <section class="fromTo">
-    <h2>1. 기본 to / from / fromTo</h2>
-    <div class="demo_area">
-      <div class="box box_to">to</div>
-      <div class="box box_from">from</div>
-      <div class="box box_from_to">fromTo</div>
-    </div>
-  </section>
-  <section>
-    <h2>2.자주 쓰는 옵션</h2>
-    <button id="btn_run">GO!</button>
-    <div class="demo_area">
-      <div class="dot"></div>
+  <section class="intro">⬇️ 아래로 스크롤 해보세요</section>
+
+  <!-- demo1 -->
+  <section class="demo">
+    <h1>Demo1: ScrollTrigger + Label Jump</h1>
+    <div class="wrap">
+      <div class="box b1">1</div>
+      <div class="box b2">2</div>
+      <div class="box b3">3</div>
+      <div class="box b4">4</div>
     </div>
   </section>
 
-  <!-- 3. Stagger + ScrollTrigger -->
-  <section>
-    <h2>3. Stagger (스크롤시 착착착~)</h2>
-    <ul class="chips">
-      <li>🍎</li>
-      <li>🍊</li>
-      <li>🍌</li>
-      <li>🍈</li>
-      <li>🍇</li>
+  <!-- demo2 -->
+  <section class="demo2">
+    <h1>Demo2: Keyboard로 타임라인 제어</h1>
+    <div class="panel">HELLO</div>
+    <p>🎹 키보드: [P] play / [O] pause / [R] reverse</p>
+  </section>
+
+  <section class="outro">🎉 끝!</section>
+
+  <div class="control_panel">
+    <p>🎹 단축키</p>
+    <ul>
+      <li>[1] → demo1 label2</li>
+      <li>[2] → demo1 label3</li>
+      <li>[P] → demo2 play</li>
+      <li>[O] → demo2 pause</li>
+      <li>[R] → demo2 reverse</li>
     </ul>
-  </section>
-
-  <!-- 4. Timeline + ScrollTrigger-->
-  <section>
-    <h2>4.Timeline 재생목록</h2>
-    <div class="demo_area scene">
-      <div class="card card1">1</div>
-      <div class="card card2">2</div>
-      <div class="card card3">3</div>
-    </div>
-  </section>
-
-  <!-- 5.스타일 변화 -->
-  <section>
-    <h2>5.스타일/트랜스폼</h2>
-    <div class="deom_area">
-      <div class="hero">HELLO</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>6. 토글 애니메이션</h2>
-    <button id="btn_toggle">토글!</button>
-    <div class="demo_area">
-      <div class="panel">Panel</div>
-    </div>
-  </section>
+  </div>
 </body>
 
 </html>
