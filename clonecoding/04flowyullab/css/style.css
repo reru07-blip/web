@@ -366,7 +366,6 @@ main .more.border:hover {
 
 .main_visual {
   height: 100vh;
-  background: #ccc;
   padding-top: 100px;
 }
 
@@ -380,7 +379,6 @@ main .more.border:hover {
   flex: 1;
   width: 100%;
   border-radius: var(--round);
-  background: red;
 }
 
 .main_visual .swiper li {
@@ -447,10 +445,30 @@ main .more.border:hover {
   width: 300px;
   height: 100px;
   display: flex;
-  background: lightcoral;
   align-items: center;
   justify-content: space-between;
   align-self: center;
+}
+
+.pager button{
+  border: 0;
+  background: transparent;
+  font-size: 2.5rem;
+  color: #ddd;
+  cursor: pointer;
+}
+.pager button:hover{color: var(--black);}
+.pager .box{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.pager .box .btn_box{
+  cursor: pointer;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info {
