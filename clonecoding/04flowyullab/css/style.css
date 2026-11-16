@@ -291,6 +291,7 @@ header .container .all_con ul.list>li button {
   display: flex;
   position: relative;
 }
+
 header .container .all_con ul.list>li button::before {
   content: '';
   display: inline-block;
@@ -298,10 +299,12 @@ header .container .all_con ul.list>li button::before {
   height: 100%;
   background: var(--yul-brand-amber);
   position: absolute;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
   z-index: -1;
   transition: .3s;
 }
+
 header .container .all_con ul.list>li:hover button::before {
   width: 100%;
 }
@@ -311,7 +314,8 @@ header .container .all_con ul.list>li ul {
   line-height: 2.4;
   font-size: 16px;
 }
-header .container .all_con ul.list>li ul li:hover a{
+
+header .container .all_con ul.list>li ul li:hover a {
   color: var(--yul-brand-amber);
 }
 
@@ -336,24 +340,26 @@ main {
   width: 100%;
 }
 
-main .more{
+main .more {
   display: flex;
   height: 72px;
   gap: 10px;
-  padding: 10px 30px;
+  padding: 10px 32px;
   border-radius: 36px;
   background: var(--gray-00);
   color: var(--yul-brand-ink);
   justify-content: space-between;
   align-items: center;
 }
-main .more.border{
+
+main .more.border {
   background: transparent;
   color: var(--gray-00);
-  border: 1px solid var(--gray-00);
+  border:1px solid var(--gray-00);
   transition: .3s;
 }
-main .more.border:hover{
+
+main .more.border:hover {
   background: var(--gray-00);
   color: var(--yul-brand-ink);
 }
@@ -366,40 +372,41 @@ main .more.border:hover{
 
 .main_visual .inner {
   height: 100%;
-  background: red;
   display: flex;
   flex-direction: column;
 }
 
-.main_visual .swiper{
+.main_visual .swiper {
   flex: 1;
   width: 100%;
   border-radius: var(--round);
   background: red;
 }
 
-.main_visual .swiper li{
+.main_visual .swiper li {
   position: relative;
   display: flex;
   align-items: flex-end;
   background: no-repeat center/cover url(../img/yul-main-hero-ai-coding.png);
 }
-.main_visual .swiper li.slide1{
+
+.main_visual .swiper li.slide1 {
   background-image: url(../img/yul-main-hero-education.png);
 }
-.main_visual .swiper li.slide2{
+
+.main_visual .swiper li.slide2 {
   background-image: url(../img/yul-main-hero-design.png);
-
 }
-.main_visual .swiper li.slide3{
+
+.main_visual .swiper li.slide3 {
   background-image: url(../img/yul-main-hero-ai-coding.png);
+}
 
-}
-.main_visual .swiper li.slide4{
+.main_visual .swiper li.slide4 {
   background-image: url(../img/yul-main-hero-publishing.png);
-  
 }
-.main_visual .swiper li.txt_area{
+
+.main_visual .swiper li .txt_area {
   position: relative;
   z-index: 1;
   display: flex;
@@ -409,32 +416,34 @@ main .more.border:hover{
   align-items: flex-start;
   flex-shrink: 0;
   color: var(--gray-00);
-  text-shadow: 0 3px 24px rgba(59,46,23,0.72);
+  text-shadow: 0 3px 24px rgba(59, 46, 23, 0.72);
 }
-.sub_txt{
+
+.sub_txt {
   color: var(--gray-02);
   font-size: 20px;
   line-height: 1;
   font-weight: 600;
 }
-.txt_area .tit{
+
+.txt_area .tit {
   font-size: 52px;
   font-weight: 700;
   line-height: 1.3;
   padding: 32px 0 38px;
 }
-.txt_area .txt{
+
+.txt_area .txt {
   color: var(--gray-02);
   font-size: 22px;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.3;
+  opacity: .9;
 }
-
 .txt_area .more{
   margin-top: auto;
 }
-
-.main_visual .pager{
+.main_visual .pager {
   width: 300px;
   height: 100px;
   display: flex;
