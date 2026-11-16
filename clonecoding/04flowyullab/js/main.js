@@ -24,12 +24,12 @@ const mainSlide = new Swiper('.main_visual .swiper', {
 //메인 슬라이드의 재생/일시정지 버튼
 const togglebtn = document.querySelector('.btn_box span');
 
-togglebtn.addEventListener('click' ,function(){
-  if(mainSlide.autoplay.running){
+togglebtn.addEventListener('click', function () {
+  if (mainSlide.autoplay.running) {
     //자동재생 중이면 멈추고 아이콘을 자동재생 모양으로 바꿈
     mainSlide.autoplay.stop();
     this.innerText = 'play_arrow';
-  }else{
+  } else {
     //멈춘 상태면 다시 재생하고 아이콘을 일시정지 모양으로 바꿈
     mainSlide.autoplay.start();
     this.innerText = 'pause';
@@ -47,9 +47,9 @@ const totalEl = document.querySelector('.main_visual .pager .txt_box span:last-o
 const getTotal = () => mainSlide.slidesEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
 
 //화면에 현재 번호와 전체 개수를 적어주는 함수
-const setPager = () =>{
+const setPager = () => {
   //는 0부터 시작하므로 화면에는 1을 더해서 보여줌
-  const current = mainSlide.realIndex +1;
+  const current = mainSlide.realIndex + 1;
   numEl.textContent = String(current);
   totalEl.textContent = String(getTotal());
 }
@@ -58,4 +58,16 @@ const setPager = () =>{
 setPager();
 
 //슬라이드가 바뀔때마다 번호도 바뀜
-mainSlide.on('slideChange',setPager);
+mainSlide.on('slideChange', setPager);
+
+//공지영역에 세로 슬라이드
+const infoSlide = new Swiper('.article_top .slide .swiper', {
+  direction: 'vertical',
+  //마지막 슬라이드 다음에 다시 첫 슬라이드로 이어지게
+  loop: true,
+  //자동으로 다음 슬라이드로 넘어가게
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
