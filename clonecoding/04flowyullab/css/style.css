@@ -1027,7 +1027,13 @@ main .more.border:hover {
   height: 60px;
 }
 
-.blog .swiper .box .txt_box span {}
+.blog .swiper .box .txt_box span {
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  color: var(--gray-05);
+  display: block;
+  margin-top: auto;
+}
 
 .curriculum {
   padding-top: 64px;
