@@ -1051,6 +1051,7 @@ main .more.border:hover {
 
 .curriculum {
   padding-top: 64px;
+  padding-bottom: 50px;
   background-color: var(--gray-01);
 }
 
@@ -1117,7 +1118,7 @@ main .more.border:hover {
 }
 
 .contact {
-  padding: 64px 0;
+  padding-bottom: 64px;
   background-color: var(--gray-01);
 }
 
