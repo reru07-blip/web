@@ -3,7 +3,37 @@ const header = document.querySelector('header');
 
 document.getElementById('ham_menu').addEventListener('click', function () {
   header.classList.toggle('on');
+  document.querySelector('html,body').classList.toggle('no-scroll');
 });
+
+let scrollLockY = 0;
+
+const setScrollLocked = (isLocked) => {
+  if (isLocked) {
+    //지금 보고 있는 스크롤 위치를 기억합니다
+    scrollLockY = window.scrollY;
+  }
+}
+//직전 스크롤 위치 - 지금 위치와 비교해서 사용자가 아래로 내리는 위로 올리는지 판단
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+  //현재 스크롤위치
+  const currentScrollY = window.scrollY;
+  // console.log(currentScrollY);
+
+  //지금 위치가 직전 위치보다 크면 아래로 스크롤 중
+  if (currentScrollY > lastScrollY) {
+    header.style.top = '-100px'
+  } else {
+    header.style.top = 0;
+
+  }
+  //다음 스크롤때 비교할 수 있도록 지금 위치 저장
+  lastScrollY = currentScrollY;
+
+});
+
 
 //메인 히어로
 const mainSlide = new Swiper('.main_visual .swiper', {
@@ -118,4 +148,8 @@ const blogSlide = new Swiper('.blog .swiper', {
       this.wrapperEl.style.transitionTimingFunction = 'linear';
     },
   },
+});
+
+document.querySelector('.select_box button').addEventListener('click', () => {
+  document.querySelector('.select_box').classList.toggle('on');
 });
