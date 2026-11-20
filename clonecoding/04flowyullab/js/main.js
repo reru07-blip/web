@@ -6,7 +6,7 @@ document.getElementById('ham_menu').addEventListener('click', function () {
   document.querySelector('html,body').classList.toggle('no-scroll');
 });
 
-document.querySelector('header .container .all_con ul.list>li').forEach(function (li) {
+document.querySelectorAll('header .container .all_con ul.list>li').forEach(function (li) {
   const button = li.querySelector('button');
 
   //버튼이 없는 항목은 건너뜁니다
@@ -14,7 +14,7 @@ document.querySelector('header .container .all_con ul.list>li').forEach(function
 
   button.addEventListener('click', function () {
     //css의 미디쿼리와 동일하게 1160px이하에서만 실행
-    if (window.matchMedia('(max-width:1160px)').matches) return;
+    if (!window.matchMedia('(max-width:1160px)').matches) return;
     li.classList.toggle('on');
   });
 })

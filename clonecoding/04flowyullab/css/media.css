@@ -106,6 +106,7 @@
     width: 100%;
     margin: 0;
     border: 0;
+    padding-inline: 1vw;
   }
 
   header .container .all_con ul.list>li:last-child {
@@ -120,8 +121,9 @@
     justify-content: space-between;
     padding-inline: 20px;
   }
-  header .container .all_con ul.list>li button {
 
+  header .container .all_con ul.list>li.on button {
+    border-bottom-color: transparent;
   }
 
   header .container .all_con ul.list>li button::before {
@@ -629,13 +631,13 @@
     gap: 20px;
   }
 
-  .curriculum p {
-    font-size: 3vw;
-  }
-
   .curriculum .inner a .txt_box {
     width: 100%;
     text-align: center;
+  }
+
+  .curriculum p {
+    font-size: 3vw;
   }
 
   .curriculum .list_box {
