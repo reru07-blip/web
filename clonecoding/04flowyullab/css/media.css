@@ -120,6 +120,9 @@
     justify-content: space-between;
     padding-inline: 20px;
   }
+  header .container .all_con ul.list>li button {
+
+  }
 
   header .container .all_con ul.list>li button::before {
     content: '>';
@@ -149,6 +152,8 @@
 
   header .container .all_con ul.list>li.on ul {
     display: block;
+    padding: 1vw 20px 2vw;
+    border-bottom: 1px solid var(--gray-06);
   }
 
   /* main_visual */
@@ -623,19 +628,52 @@
     flex-wrap: wrap;
     gap: 20px;
   }
-  .curriculum p{
+
+  .curriculum p {
     font-size: 3vw;
   }
-  .curriculum .inner a .list_box {
+
+  .curriculum .inner a .txt_box {
     width: 100%;
     text-align: center;
   }
 
-  .curriculum .txt_box {
+  .curriculum .list_box {
     width: 100%;
     height: auto;
   }
-  .curriculum .txt_box li{
+
+  .curriculum .list_box li {
     height: 34px;
+  }
+
+  footer .f_top {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  footer .f_top .logo_box {
+    order: 2;
+  }
+
+  footer .f_top .btn_box {
+    order: 1;
+  }
+
+  footer .f_top .btn_box .top {
+    margin-left: auto;
+  }
+
+  footer .f_bottom {
+    flex-direction: column;
+  }
+
+  footer .f_bottom .f_con1 span:nth-of-type(1) {
+    padding-inline-start: 0;
+  }
+
+  footer .f_bottom .copy {
+    text-align: left;
+    margin-top: 10px;
   }
 }
