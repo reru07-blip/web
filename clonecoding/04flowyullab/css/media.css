@@ -24,7 +24,7 @@
   }
 
   .contact .inner article {
-    padding: 0 16px;
+    padding: 0px 16px;
     border-radius: 16px;
   }
 
@@ -74,7 +74,7 @@
   }
 
   :root {
-    --round: 16px;
+    --ronud: 16px;
   }
 
   header .inner {
@@ -129,12 +129,11 @@
     transform: rotate(90deg) scaleY(1.4);
     font-weight: 100;
     width: auto;
-    font-family: var(--font-eng2);
+    font-family: var(--font-Eng2);
   }
 
   header .container .all_con ul.list>li.on button::before {
     transform: rotate(-90deg) scaleY(1.4);
-
   }
 
   header .container .all_con ul.list>li:hover button::before {
@@ -183,7 +182,7 @@
   }
 
   .article_bottom .box .txt_b {
-    left: 36px;
+    left: 36px
   }
 
   .article_bottom .box:hover .txt_b {
@@ -191,7 +190,7 @@
   }
 
   .article_bottom .box3:hover .txt_b {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 
   .article_bottom .box .txt_b span {
@@ -255,7 +254,7 @@
   }
 
   .learning {
-    padding: 0 0 56px;
+    padding: 0 20px 56px;
   }
 
   .learning ul {
@@ -289,7 +288,7 @@
   .con .inner {
     padding-inline: 20px;
     height: 32px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   .con .inner a.more {
@@ -297,7 +296,7 @@
     height: 40px;
     padding: 0;
     justify-content: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .con .inner a.more em {
@@ -413,7 +412,7 @@
   }
 }
 
-@media screen and (max-width:1024) {
+@media screen and (max-width:1024px) {
   header .right a {
     display: none;
   }
@@ -483,7 +482,7 @@
   }
 
   footer {
-    padding: 26px 16px 40px;
+    padding: 24px 16px 40px;
     font-size: 13px;
   }
 
@@ -500,7 +499,7 @@
   footer .f_top .logo_box .logo_b {
     max-width: 100%;
     gap: 16px;
-    font-size: 0.75rem;
+    font-size: .75rem;
     flex-wrap: wrap;
   }
 
@@ -516,26 +515,127 @@
     width: 36px;
     height: 36px;
   }
-  .sns a img{
+
+  .sns a img {
     width: 50%;
-  }  
+  }
+
   .select_box {
     width: 132px;
     height: 36px;
   }
-  .select_box button{
+
+  .select_box button {
     font-size: 13px;
     white-space: nowrap;
   }
 
-  .top a{
-    width: 80%;
+  .top a {
+    width: 80px;
     height: 36px;
     font-size: 13px;
     padding: 0 12px;
   }
-  footer .f_bottom{
+
+  footer .f_bottom {
     margin-top: 24px;
-    
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .main_visual {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  .main_visual .swiper li {
+    align-items: center;
+  }
+
+  .main_visual .swiper li .txt_area {
+    height: 80%;
+    padding: 40px;
+  }
+
+  .txt_area .sub_txt {
+    font-size: 2.6vw;
+  }
+
+  .txt_area .tit {
+    font-size: 5.5vw;
+  }
+
+  .txt_area .txt {
+    font-size: 2.75vw;
+    line-height: 1.4;
+  }
+
+  main .more {
+    height: auto;
+    padding: 14px 30px;
+    font-size: clamp(2.8vw, 1rem, 3vw);
+  }
+
+  .main_visual .pager {
+    height: 6vh;
+    font-size: 12px;
+    padding-bottom: 1vh;
+  }
+
+  .main_visual .pager button {
+    font-size: 2rem;
+  }
+
+  .article_top {
+    height: 6vw;
+    padding: 6vw 4vw;
+  }
+
+  .article_top .slide .swiper li a {
+    font-size: 3vw;
+    gap: 10px;
+    padding-inline: 1vw;
+  }
+
+  .article_top .slide .swiper li a .txt {
+    flex: 1;
+  }
+
+  .article_top .slide .swiper li a .day {
+    display: none;
+  }
+
+  .article_bottom {
+    margin-top: 5vh;
+    padding-inline: 0;
+  }
+
+  .learning,
+  .con .inner,
+  .curriculum,
+  .contact .inner {
+    padding-inline: 0;
+  }
+
+  .curriculum .inner a {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .curriculum p{
+    font-size: 3vw;
+  }
+  .curriculum .inner a .list_box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .curriculum .txt_box {
+    width: 100%;
+    height: auto;
+  }
+  .curriculum .txt_box li{
+    height: 34px;
   }
 }
