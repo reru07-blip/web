@@ -20,6 +20,6 @@ window.addEventListener('load', () => {
       }
       //클릭한 대상만 선택해서 클래스명 on을 추가해서 활성화
       e.currentTarget.classList.add('on');
-    })
+    });
   }
-})
+});
