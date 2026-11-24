@@ -1,12 +1,127 @@
 @charset "utf-8";
-figure.vid{
+
+figure.vid {
   position: fixed;
   inset: 0;
   width: 100%;
   height: 100%;
 }
-figure.vid video{
+
+figure.vid video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+main.wrap {
+  position: relative;
+  padding-top: 80px;
+}
+
+main h2 {
+  font-family: var(--Roboto-serif);
+  font-size: 12rem;
+  color: var(--w-color);
+  font-weight: 400;
+  letter-spacing: .3rem;
+  opacity: .8;
+}
+
+main h3 {
+  font-family: var(--Playfair);
+  font-size: 12rem;
+  color: var(--w-color);
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(54, 5, 5, 0.41);
+  position: relative;
+}
+
+main strong {
+  color: var(--w-color);
+}
+
+a.more {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-weight: 800;
+  color: var(--w-color);
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "Open Sans", serif;
+}
+
+a.more .plus {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid var(--w-color);
+  position: relative;
+}
+
+a.more .plus::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 26px;
+  background: var(--w-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a.more .plus::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: var(--w-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.txt_box strong {
+  display: block;
+  line-height: 1.6;
+  margin-block-start: 8vh;
+  margin-block-end: 5vh;
+  font-size: 1.7rem;
+}
+
+/* main_visual */
+.main_visual{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+/* brand_story */
+.brand_story{
+  width: 100%;
+  height: 100vh;
+  margin-block: 20vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: var(--w-color);
+}
+.brand_story .inner{
+  position: relative;
+}
+.brand_story .img_box{
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  background: url(../asset/img/tree_banner.jpg) center/cover;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+}
+.brand_story .txt_box{
+  position: relative;
 }
