@@ -26,4 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
     li.style.transitionDelay = `${0.2 * (index + 1)}s`
   });
 
+  //스크롤시 헤더 색상 바꾸기, 블러 바꾸기
+  window.addEventListener('scroll', () => {
+    const st = window.scrollY;
+    // console.log(st);
+    if (st >= 80) {
+      $header.classList.add('sc');
+    } else {
+      $header.classList.remove('sc');
+    }
+  })
+
 });//end
