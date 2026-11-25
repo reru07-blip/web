@@ -209,27 +209,32 @@
 }
 
 @media screen and (max-width:700px) {
-  header h1{
+  header h1 {
     font-size: 1.2rem;
   }
-  header .fix .gnb{
+
+  header .fix .gnb {
     text-align: center;
   }
-  header .fix .gnb>ul>li{
+
+  header .fix .gnb>ul>li {
     border-bottom: 1px solid var(--w-color);
   }
-  header .fix .gnb>ul>li:last-child{
+
+  header .fix .gnb>ul>li:last-child {
     border-bottom: 0;
   }
-  
-  header .fix .gnb>ul>li>a{
+
+  header .fix .gnb>ul>li>a {
     font-size: 10vw;
   }
-  header .fix .gnb>ul>li>ul.sub{
+
+  header .fix .gnb>ul>li>ul.sub {
     flex-direction: column;
     font-size: 1rem;
   }
-  header .fix .gnb>ul>li>ul.sub li{
+
+  header .fix .gnb>ul>li>ul.sub li {
     border-right: 0;
     padding-inline: 0;
     flex: 1;
